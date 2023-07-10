@@ -3,7 +3,6 @@ progress = [[0] * 3 for _ in range(2)]
 ret = 0
 
 def dfs(day, total, prevJ):
-    global ret
     if day == N:
         if total >= M:
             ret += 1
