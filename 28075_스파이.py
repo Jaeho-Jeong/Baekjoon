@@ -1,11 +1,11 @@
 N, M = map(int, input().split())
 progress = [[0] * 3 for _ in range(2)]
-ret = 0
+sol = 0
 
 def dfs(day, total, prevJ):
     if day == N:
         if total >= M:
-            ret += 1
+            sol += 1
         return
     for i in range(2):
         for j in range(3):
@@ -20,4 +20,4 @@ for i in range(2):
     progress[i] = list(map(int, input().split()))
 
 dfs(0, 0, -1)
-print(ret)
+print(sol)
